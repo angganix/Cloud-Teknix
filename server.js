@@ -1,6 +1,7 @@
+require("dotenv").config();
 const express = require("express");
 const server = express();
-const port = 2001;
+const port = process.env.APP_PORT || 2001;
 const host = "0.0.0.0";
 const path = require("path");
 const fs = require("fs");
